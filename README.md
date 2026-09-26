@@ -1,16 +1,5 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+this is my ajax application, note that l did not upload the node_modules because its too big about 85mb and the maximum size for github its 25mb per repisitory. Firstly i created this project by creating a folder then in the terminal i run (npm create vite@latest react -- --template react) for it to provide a project structure. after that i created components folder inside the src. the app include 3 sections: a greeting, a counter and a task list. the request fetchUser, we use  fetch("https://randomuser.me/api/") to return a promise and await to wait for the server to respond. i used await response.json() to parse JSON response into a usable javascript. in the state management on loading, it starts as true the i set it to false in the finally block so that it turns off whether the request succeeds or fails. also the error, if the try block throws an error like no internt the catch block sets this state. after editing the files and saving i ran the commands in the terminal:
+cd react
+npm install
+npm run dev
+after that a local host is provided where l will see the output.
